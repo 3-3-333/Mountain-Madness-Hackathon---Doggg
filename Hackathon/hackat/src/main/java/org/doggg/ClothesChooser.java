@@ -8,7 +8,7 @@ public class ClothesChooser{
         up=new ArrayList<ClothesNode>();
         r=new Random();
     }
-    public void MakeList()){
+    public void MakeList(){
         up.add(new ClothesNode("Up1", "resources/Up1.png"));
         up.add(new ClothesNode("Up2", "resources/Up2.png"));
         for(int i=1;i<6;i++){

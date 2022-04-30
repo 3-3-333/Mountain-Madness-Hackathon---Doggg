@@ -28,7 +28,7 @@ public class Listener implements KeyListener{
         if(key == KeyEvent.VK_LEFT){
             gf.changeFoodOrCloth();
         }
-        if(key == KeyEvent.VK_1){
+        if(key == KeyEvent.VK_ENTER){
             gf.changeState();
         }
     }
@@ -51,7 +51,7 @@ public class Listener implements KeyListener{
         if(key == KeyEvent.VK_LEFT){
             gf.changeFoodOrCloth();
         }
-        if(key == KeyEvent.VK_1){
+        if(key == KeyEvent.VK_ENTER){
             gf.changeState();
         }
     }

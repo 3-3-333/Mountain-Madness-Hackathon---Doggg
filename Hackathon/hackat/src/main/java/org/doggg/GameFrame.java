@@ -76,7 +76,8 @@ public class GameFrame extends JPanel implements Runnable {
         double interval = 1000000000 / frame_speed;
         double nextUpdate = System.nanoTime() + interval;
         while(GameState != end){
-            runGame();
+            if(GameState !=-1)
+                runGame();
             try {
                 double sleepTime = (nextUpdate - System.nanoTime()) / 1000000;
                 if (sleepTime < 0) {
@@ -99,14 +100,19 @@ public class GameFrame extends JPanel implements Runnable {
         //titleScreen(g2);
         
         if(GameState == title){
-            if(Food_or_Cloth == Cloth)
+            if(Food_or_Cloth == Cloth){
                 g2.drawString("Cloth", 300, 300);
-            if(Food_or_Cloth == Food)
+            }
+            if(Food_or_Cloth == Food){
                 g2.drawString("Food", 300, 300);
+            }
         }
         if(GameState == game)
-            if(Food_or_Cloth == Food)
-                fs.choosefood(g2);
+            if(Food_or_Cloth == Food){
+                    fs.choosefood(g2);
+                    GameState = -1;
+                    g2.drawString("press enter to return", 300, 300);
+            }
     }
 
     
