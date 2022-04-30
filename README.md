@@ -1,6 +1,11 @@
-# Java Game - Doggggg
-help people to choose cloth and food
+# Food and Outfit Picker - indecisive.io
+Steve Jobs wore the same outfit everyday. 
+Why? Because he wanted to eliminate the amount of decisions he makes in a day in order to eliminate decision fatigue, so that he can have more energy to work on engineering and business.
+However, wearing the same thing isn't acceptable for everyone.
 
+Here comes our project: indecisive.io
+With just a click of a few buttons, our app randomly selects the user's outfit for the day, and the food that they will be eating!
+This allows our users to make less decisions and at the same time, not have to wear/eat the same thing every day.
 
 ### Development team
 Group16
