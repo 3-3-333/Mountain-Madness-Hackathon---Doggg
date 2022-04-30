@@ -20,7 +20,8 @@ public class GameFrame extends JPanel implements Runnable {
     private int rows, colm, cellSize, width, height;
     private Thread gameThread;
     private Listener key = new Listener(this);
-
+    FoodSelector fs = new FoodSelector();
+  
     GameFrame(int colm, int rows, int cellSize) throws IOException {
         this.colm = colm;
         this.rows = rows;
@@ -88,7 +89,8 @@ public class GameFrame extends JPanel implements Runnable {
         Graphics2D g2 = (Graphics2D) g;
         //g2.drawImage(icecreamImage, 1, 1, 48, 48, null);
         //g2.drawImage(breadImage,480,480,48,48,null);
-        titleScreen(g2);
+        //titleScreen(g2);
+        fs.draw(g2);
     }
 
     public void runGame() {
