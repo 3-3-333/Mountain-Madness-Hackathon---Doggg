@@ -4,16 +4,11 @@ import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 import javax.imageio.ImageIO;
 import java.awt.*;
+import java.io.File;
 import java.io.IOException;
 
 public class GameFrame extends JPanel implements Runnable {
 
-    //public Image food = ImageIO.read(getClass().getResourceAsStream("resources/Food1_24x24.png"));
-    FoodNode icecream=new FoodNode("icecream", "resources/Food1_24x24.png");
-    Image icecreamImage=icecream.getImage();
-
-    FoodNode bread = new FoodNode("bread","resources/Food2_24x24.png");
-    Image breadImage = bread.getImage();
 
     // 我的相对路径有问题 换成绝对路径以后是可以正常显示的
     private int frame_speed = 60;
@@ -21,6 +16,7 @@ public class GameFrame extends JPanel implements Runnable {
     private Thread gameThread;
     private Listener key = new Listener(this);
     private FoodSelector fs = new FoodSelector();
+    private ClothesChooser cs = new ClothesChooser();
     public int GameState = 0;
     private final int title = 0;
     private final int game = 1;
@@ -98,7 +94,6 @@ public class GameFrame extends JPanel implements Runnable {
         //g2.drawImage(icecreamImage, 1, 1, 48, 48, null);
         //g2.drawImage(breadImage,480,480,48,48,null);
         //titleScreen(g2);
-        
         if(GameState == title){
             if(Food_or_Cloth == Cloth){
                 g2.drawString("Cloth", 300, 300);
@@ -112,10 +107,13 @@ public class GameFrame extends JPanel implements Runnable {
                     fs.choosefood(g2);
                     GameState = -1;
                     g2.drawString("press enter to return", 300, 300);
+            }else if(Food_or_Cloth==Cloth){
+                cs.randomSet(g2);
+                GameState = -1;
+                g2.drawString("press enter to return", 300, 300);
             }
     }
 
-    
     public void runGame() {
         repaint();
     }
