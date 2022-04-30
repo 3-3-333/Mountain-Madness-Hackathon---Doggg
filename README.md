@@ -8,7 +8,7 @@ Group16
 * Rongsheng Qian
 * Chao Wang
 * Mathew Tse
-* Candice Chen
+* Hanyan Chen
 
 ### Development Tools
 * intelliJ IDE with JDK
