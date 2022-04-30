@@ -1,9 +1,9 @@
 package org.doggg;
 import java.awt.image.BufferedImage;
-public class FoodNote extends ItemNode{
+public class FoodNode extends ItemNode{
     private String name;
     private BufferedImage entity;
-    public FoodNote(String name, String path){
+    public FoodNode(String name, String path){
         super(name,path);
     }
 }

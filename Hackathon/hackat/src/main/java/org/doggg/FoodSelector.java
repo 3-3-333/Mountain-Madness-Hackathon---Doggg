@@ -5,7 +5,7 @@ import java.util.Random;
 
 public class FoodSelector{
    private String name;
-   private ArrayList<FoodNote> foodlist;
+   private ArrayList<FoodNode> foodlist;
    private Random r=new Random();
    public void choosefood(){
         System.out.println("Your food is : ");

@@ -1,6 +1,6 @@
 package org.doggg;
 import javax.imageio.ImageIO;
-import java.awt.image.BufferedImage;
+import java.awt.*;
 import java.io.IOException;
 
 public class ItemNode {
@@ -16,9 +16,9 @@ public class ItemNode {
     public String getName(){
         return this.name;
     }
-    public BufferedImage getImage(){
+    public Image getImage(){
         return this.entity;
     }
-    private String name;
-    private BufferedImage entity;
+    protected String name;
+    protected Image entity;
 }
