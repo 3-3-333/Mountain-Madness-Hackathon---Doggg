@@ -5,17 +5,24 @@ import java.util.Random;
 
 public class ClothesChooser{
     public ClothesChooser(){
-        clothes=new ArrayList<ClothesNode>();
+        up=new ArrayList<ClothesNode>();
         r=new Random();
     }
-    public void append(ClothesNode aCloth){
-        clothes.add(aCloth);
+    public void MakeList()){
+        up.add(new ClothesNode("Up1", "resources/Up1.png"));
+        up.add(new ClothesNode("Up2", "resources/Up2.png"));
+        for(int i=1;i<6;i++){
+            bodysuit.add(new ClothesNode("bodysuit"+i, 
+                 "resources/bodysuit"+i+".png"));
+        }
     }
-    public ClothesNode choose(){
-        int selection=r.nextInt(0, clothes.size());
-        return clothes.get(selection);
+    public void randomSet(){
+        
     }
-    private ArrayList<ClothesNode> clothes;
+    private ArrayList<ClothesNode> up;
+    ClothesNode down;
+    private ArrayList<ClothesNode> bodysuit;
+    private ClothesNode body;
     private Random r;
 }
 
