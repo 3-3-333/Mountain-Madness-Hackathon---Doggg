@@ -8,10 +8,8 @@ import java.io.IOException;
 
 public class GameFrame extends JPanel implements Runnable {
 
-    //public Image food = ImageIO.read(getClass().getResourceAsStream("resources/Food1_24x24.png"));
-    FoodNode icecream=new FoodNode("icecream", "resources/Food1_24x24.png");
-    Image icecreamImage=icecream.getImage();
-    // 我的相对路径有问题 换成绝对路径以后是可以正常显示的
+    FoodNode icecream = new FoodNode("icecream", "resources/Food1_24x24.png");
+    Image icecreamImage = icecream.getImage();
     private int frame_speed = 60;
     private int rows, colm, cellSize, width, height;
     private Thread gameThread;
@@ -55,13 +53,14 @@ public class GameFrame extends JPanel implements Runnable {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-    };
+    }
 
     @Override
     public void paint(Graphics g) {
         super.paintComponent(g);
         Graphics2D g2 = (Graphics2D) g;
-        g2.drawImage(icecreamImage, 1, 1, getWidth(), getHeight(), null);
+        g2.drawImage(icecreamImage, 1, 1, 48, 48, null);
+
     }
 
     public void runGame() {
