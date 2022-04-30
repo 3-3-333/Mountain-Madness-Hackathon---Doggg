@@ -21,10 +21,11 @@ public class GameFrame extends JPanel implements Runnable {
     private Thread gameThread;
     private Listener key = new Listener(this);
     private FoodSelector fs = new FoodSelector();
-    private int GameState = 0;
+    public int GameState = 0;
     private final int title = 0;
     private final int game = 1;
-    private int Food_or_Cloth;
+    private final int end =2;
+    public int Food_or_Cloth=0;
     private final int Food = 0;
     private final int Cloth = 1;
     GameFrame(int colm, int rows, int cellSize) throws IOException {
@@ -74,19 +75,20 @@ public class GameFrame extends JPanel implements Runnable {
         System.out.println("[run/GameFrame.java] running GameFrame");
         double interval = 1000000000 / frame_speed;
         double nextUpdate = System.nanoTime() + interval;
-
-        runGame();
-        try {
-            double sleepTime = (nextUpdate - System.nanoTime()) / 1000000;
-            if (sleepTime < 0) {
-                sleepTime = 0;
+        while(GameState != end){
+            runGame();
+            try {
+                double sleepTime = (nextUpdate - System.nanoTime()) / 1000000;
+                if (sleepTime < 0) {
+                    sleepTime = 0;
+                }
+                Thread.sleep((long) sleepTime);
+                nextUpdate += interval;
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
-            Thread.sleep((long) sleepTime);
-            nextUpdate += interval;
-        } catch (InterruptedException e) {
-            e.printStackTrace();
         }
-    };
+        };
 
     @Override
     public void paint(Graphics g) {
@@ -95,8 +97,12 @@ public class GameFrame extends JPanel implements Runnable {
         //g2.drawImage(icecreamImage, 1, 1, 48, 48, null);
         //g2.drawImage(breadImage,480,480,48,48,null);
         //titleScreen(g2);
+        
         if(GameState == title){
-            
+            if(Food_or_Cloth == Cloth)
+                g2.drawString("Cloth", 300, 300);
+            if(Food_or_Cloth == Food)
+                g2.drawString("Food", 300, 300);
         }
         if(GameState == game)
             if(Food_or_Cloth == Food)
@@ -108,5 +114,15 @@ public class GameFrame extends JPanel implements Runnable {
         repaint();
     }
 
+    public void changeState(){
+        GameState++;
+    }
+
+    public void changeFoodOrCloth(){
+        if(this.Food_or_Cloth == 1)
+                this.Food_or_Cloth = 0;
+            else
+                this.Food_or_Cloth = 1;
+    }
 }
 
