@@ -8,6 +8,8 @@ Here comes our project: **indecisive.io**
 With a click of a few buttons, **our app randomly selects the user's outfit and food for the day!**
 This allows our users to make less decisions and at the same time, have something different to wear/eat every day.
 
+* see picture in rep
+
 ### Development team
 * Isaac Ding
 * Rongsheng Qian
