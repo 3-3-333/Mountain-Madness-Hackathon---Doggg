@@ -9,7 +9,6 @@ With just a click of a few buttons, **our app randomly selects the user's outfit
 This allows our users to make less decisions and at the same time, not have to wear/eat the same thing every day.
 
 ### Development team
-Group16
 * Isaac Ding
 * Rongsheng Qian
 * Chao Wang
