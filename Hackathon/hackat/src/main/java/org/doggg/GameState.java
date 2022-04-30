@@ -1,5 +1,8 @@
 package org.doggg;
 
-public class GameState {
-    
+public enum GameState {
+    MENU,
+    CLOTHES,
+    FOOD,
+    COSTUMIZE
 }
