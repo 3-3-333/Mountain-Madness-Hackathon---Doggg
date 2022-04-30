@@ -35,10 +35,7 @@ This allows our users to make less decisions and at the same time, have somethin
 ## Run
 * Run Main.java
 
-##looks like!
-[1601651360915_ pic](https://user-images.githubusercontent.com/94476615/166125!
-[1591651360881_ pic](https://user-images.githubusercontent.com/94476615/166125819-d81c4539-9904-413e-8d0e-a9cc316d6d25.jpg)
-815-f97e88dd-b335-4d72-8b72-85ea67f22683.jpg)
+
 
 
 
