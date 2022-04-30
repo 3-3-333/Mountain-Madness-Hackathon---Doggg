@@ -22,9 +22,11 @@ public class GameFrame extends JPanel implements Runnable {
     private Listener key = new Listener(this);
     private FoodSelector fs = new FoodSelector();
     private int GameState = 0;
-    private int title = 0;
-    private int game = 1;
-    
+    private final int title = 0;
+    private final int game = 1;
+    private int Food_or_Cloth;
+    private final int Food = 0;
+    private final int Cloth = 1;
     GameFrame(int colm, int rows, int cellSize) throws IOException {
         this.colm = colm;
         this.rows = rows;
@@ -93,7 +95,12 @@ public class GameFrame extends JPanel implements Runnable {
         //g2.drawImage(icecreamImage, 1, 1, 48, 48, null);
         //g2.drawImage(breadImage,480,480,48,48,null);
         //titleScreen(g2);
-        fs.choosefood(g2);
+        if(GameState == title){
+            
+        }
+        if(GameState == game)
+            if(Food_or_Cloth == Food)
+                fs.choosefood(g2);
     }
 
     
