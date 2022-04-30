@@ -93,9 +93,10 @@ public class GameFrame extends JPanel implements Runnable {
         //g2.drawImage(icecreamImage, 1, 1, 48, 48, null);
         //g2.drawImage(breadImage,480,480,48,48,null);
         //titleScreen(g2);
-        fs.draw(g2);
+        fs.choosefood(g2);
     }
 
+    
     public void runGame() {
         repaint();
     }

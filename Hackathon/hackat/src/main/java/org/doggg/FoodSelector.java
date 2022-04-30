@@ -8,11 +8,13 @@ import java.util.Random;
 public class FoodSelector{
    private Random rand;
    private ArrayList<FoodNode> foodlist;
-   Image IcecreamImage,BreadImage,HamburgImage,JuiceImage;
+   private ArrayList<Image> foodImage;
+
 
    public FoodSelector(){
      rand=new Random();
-     foodlist=new ArrayList<FoodNode>();     
+     foodlist=new ArrayList<FoodNode>();  
+     foodImage=new ArrayList<Image>();
      this.creatlist();
    }
 
@@ -22,30 +24,29 @@ public class FoodSelector{
        foodlist.add(new FoodNode("Hamburg","resources/Food3_24x24.png"));
        foodlist.add(new FoodNode("Juice","resources/Food4_24x24.png"));
 
-       IcecreamImage=foodlist.get(0).getImage();
-       BreadImage=foodlist.get(1).getImage();
-       HamburgImage=foodlist.get(2).getImage();
-       JuiceImage=foodlist.get(3).getImage();
+       foodImage.add(foodlist.get(0).getImage());
+       foodImage.add(foodlist.get(1).getImage());
+       foodImage.add(foodlist.get(2).getImage());
+       foodImage.add(foodlist.get(3).getImage());
    }
-   public void choosefood(){
+   public void choosefood(Graphics2D g){
         System.out.println("Your food is : ");
-        int length=foodlist.size();
-        int randnumber=rand.nextInt(length)+1;
-
-        foodlist.get(randnumber);
+        int randnumber=rand.nextInt(4)+1;
+        g.drawImage(foodImage.get(randnumber), 1, 1, 48,48,null);
+           
         
    }
 
 
    public void draw(Graphics2D g)
    {
-        g.drawImage(IcecreamImage, 1, 1, 48, 48, null);
-        g.drawImage(BreadImage, 1, 50,48, 48, null);
-        g.drawImage(HamburgImage, 1,100, 48, 48, null);
-        g.drawImage(JuiceImage, 1, 150, 48, 48, null);
-        
-        
+        g.drawImage(foodImage.get(0), 1, 1, 48, 48, null);
+        g.drawImage(foodImage.get(1), 1, 50,48, 48, null);
+        g.drawImage(foodImage.get(2), 1,100, 48, 48, null);
+        g.drawImage(foodImage.get(3), 1, 150, 48, 48, null);
    }
+
+
 
     
 }
