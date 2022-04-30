@@ -2,7 +2,7 @@ package org.doggg;
 
 public class Categories {
     public Categories(){
-        this.categoryName="default";
+        this.categoryName = "default";
     }
     private String categoryName;
     public void setCategoryName (String data){
