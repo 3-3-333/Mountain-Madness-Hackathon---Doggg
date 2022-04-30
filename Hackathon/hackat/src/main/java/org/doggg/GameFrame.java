@@ -102,7 +102,7 @@ public class GameFrame extends JPanel implements Runnable {
                 g2.drawString("Food", 300, 300);
             }
         }
-        if(GameState == game)
+        if(GameState == game){
             if(Food_or_Cloth == Food){
                     fs.choosefood(g2);
                     GameState = -1;
@@ -112,6 +112,7 @@ public class GameFrame extends JPanel implements Runnable {
                 GameState = -1;
                 g2.drawString("press enter to return", 300, 300);
             }
+        }
     }
 
     public void runGame() {
