@@ -24,7 +24,7 @@ This allows our users to make less decisions and at the same time, have somethin
 
 ### Email & Github
 * Rongsheng Qian - email: rqa4@sfu.ca github: XQQ0504
-* Chao Wang - email: cwa209@sfu.ca
+* Chao Wang - email: cwa209@sfu.ca github:ChaoChao233
 * Mathew Tse: mta118@sfu.ca github: mathewtse
 * Isaac Ding: ida8@sfu.ca github: IsD64
 * Hanyan Chen: hca166@sfu.ca github: iskaikaila
