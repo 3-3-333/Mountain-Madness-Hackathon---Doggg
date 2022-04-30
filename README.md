@@ -1,11 +1,11 @@
 # Food and Outfit Picker - indecisive.io
 Steve Jobs wore the same outfit everyday. 
-Why? Because he wanted to eliminate the amount of decisions he makes in a day in order to eliminate decision fatigue, so that he can have more energy to work on engineering and business.
-However, wearing the same thing isn't acceptable for everyone.
+Why? Because he wanted to reduce the amount of decisions he makes in a day in order to reduce decision fatigue, so that he can have more energy to work on engineering and business.
+Most people would like to have more energy, but they are not willing to wear the same thing every day.
 
 Here comes our project: **indecisive.io**
 
-With just a click of a few buttons, **our app randomly selects the user's outfit for the day, and the food that they will be eating!**
+With a click of a few buttons, **our app randomly selects the user's outfit for the day, and the food that they will be eating!**
 This allows our users to make less decisions and at the same time, have something different to wear/eat every day.
 
 ### Development team
