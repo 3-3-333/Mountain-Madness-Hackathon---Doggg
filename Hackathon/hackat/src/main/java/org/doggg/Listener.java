@@ -51,6 +51,9 @@ public class Listener implements KeyListener{
         if(key == KeyEvent.VK_LEFT){
             gf.changeFoodOrCloth();
         }
+        if(key == KeyEvent.VK_1){
+            gf.changeState();
+        }
     }
     @Override
     public void keyReleased(KeyEvent e) {
