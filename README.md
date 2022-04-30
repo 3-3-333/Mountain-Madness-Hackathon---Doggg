@@ -1,4 +1,4 @@
-# 2D Maze Game in Java - Doggggg
+# Java Game in Java - Doggggg
 help people to choose cloth and food
 
 
