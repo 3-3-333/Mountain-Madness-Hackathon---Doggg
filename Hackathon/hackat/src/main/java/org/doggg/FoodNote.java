@@ -6,5 +6,4 @@ public class FoodNote extends ItemNode{
     public FoodNote(String name, String path){
         super(name,path);
     }
-
 }
