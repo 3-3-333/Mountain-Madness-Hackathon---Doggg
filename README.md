@@ -6,7 +6,7 @@ However, wearing the same thing isn't acceptable for everyone.
 Here comes our project: **indecisive.io**
 
 With just a click of a few buttons, **our app randomly selects the user's outfit for the day, and the food that they will be eating!**
-This allows our users to make less decisions and at the same time, not have to wear/eat the same thing every day.
+This allows our users to make less decisions and at the same time, have something different to wear/eat every day.
 
 ### Development team
 * Isaac Ding
