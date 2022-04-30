@@ -1,4 +1,4 @@
-# Java Game in Java - Doggggg
+# Java Game - Doggggg
 help people to choose cloth and food
 
 
