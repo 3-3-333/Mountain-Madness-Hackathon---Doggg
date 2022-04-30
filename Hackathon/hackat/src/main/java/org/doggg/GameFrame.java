@@ -21,7 +21,7 @@ public class GameFrame extends JPanel implements Runnable {
     private Thread gameThread;
     private Listener key = new Listener(this);
     private FoodSelector fs = new FoodSelector();
-    private int GameState;
+    private int GameState = 0;
     private int title = 0;
     private int game = 1;
     
