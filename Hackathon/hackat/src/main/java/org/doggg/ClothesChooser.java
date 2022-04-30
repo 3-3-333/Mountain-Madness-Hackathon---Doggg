@@ -30,25 +30,25 @@ public class ClothesChooser{
         body=new ClothesNode("body", "resources/body.png");
     }
     public void randomSet(Graphics2D g2){
-        g2.drawImage(body.getImage(), 1, 1, 166, 222, null);
-        int headIndex=r.nextInt(0,head.size());
-        Image headPic=head.get(headIndex+1).getImage();
-        g2.drawImage(headPic, 1, 1, 166, 222, null);
+        g2.drawImage(body.getImage(), 1, 1, 166*4, 222*4, null);
+        int headIndex=r.nextInt(1,head.size());
+        Image headPic=head.get(headIndex).getImage();
+        g2.drawImage(headPic, 1, 1, 166*4, 222*4, null);
         int isBodySuit=r.nextInt(0, 2);
         if(isBodySuit==1){
-            int index=r.nextInt(0,bodysuit.size());
-            Image bodysuitPic=bodysuit.get(index+1).getImage();
+            int index=r.nextInt(1,bodysuit.size()-1);
+            Image bodysuitPic=bodysuit.get(index).getImage();
             System.out.println("in bodysuit");
-            g2.drawImage(bodysuitPic,1,1,166,222,null);
+            g2.drawImage(bodysuitPic,1,1,166*4,222*4,null);
         }else{
             System.out.println("in up");
-            int upIndex=r.nextInt(0,up.size());
-            Image upPic=up.get(upIndex+1).getImage();
-            g2.drawImage(upPic, 1, 1, 166, 222, null);
+            int upIndex=r.nextInt(1,up.size());
+            Image upPic=up.get(upIndex).getImage();
+            g2.drawImage(upPic, 1, 1, 166*4, 222*4, null);
             int hasDown=r.nextInt(0, 2);
             if(hasDown==1){
                 System.out.println("in down");
-                g2.drawImage(down.getImage(), 1, 1, 166, 222, null);
+                g2.drawImage(down.getImage(), 1, 1, 166*4, 222*4, null);
             }
         }
     }
