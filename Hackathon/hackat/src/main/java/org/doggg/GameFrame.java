@@ -40,7 +40,7 @@ public class GameFrame extends JPanel implements Runnable {
         height = cellSize * rows;
         this.setPreferredSize(new Dimension(width, height));
         this.setBackground(new Color(0x123456));
-        // this.addKeyListener(key);
+        this.addKeyListener(key);
         this.setFocusable(true);
     }
 
