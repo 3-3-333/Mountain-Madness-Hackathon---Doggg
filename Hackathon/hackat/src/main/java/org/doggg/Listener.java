@@ -5,8 +5,8 @@ import java.awt.event.KeyListener;
 import java.io.IOException;
 
 public class Listener implements KeyListener{
-    GameFrame gf;
-    boolean up,down,right,left,enter;
+    public GameFrame gf;
+    public boolean up,down,right,left,enter;
     public Listener(GameFrame gf) {
         this.gf = gf;
     }

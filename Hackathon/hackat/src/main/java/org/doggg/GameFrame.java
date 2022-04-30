@@ -21,6 +21,7 @@ public class GameFrame extends JPanel implements Runnable {
     private Thread gameThread;
     private Listener key = new Listener(this);
     FoodSelector fs = new FoodSelector();
+    
   
     GameFrame(int colm, int rows, int cellSize) throws IOException {
         this.colm = colm;
